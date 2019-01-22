@@ -11,14 +11,6 @@ public class MassConcentration extends Formula {
         return getSol();
     }
 
-   /* public MassConcentration(double data1, double data2) {
-        super(data1, data2);
-        super.setName("Stężenie masowe");
-        super.setData1Name("MASA SKŁADNIKA");
-        super.setData2Name("OBJĘTOŚĆ ROZTWORU");
-
-    }
-    */
 
     public MassConcentration() {
         super.setName("Stężenie masowe");

@@ -1,6 +1,7 @@
 package model.unit;
 
 import javafx.collections.FXCollections;
+import model.unit.Unit;
 
 public class DensityUnit extends Unit {
     public DensityUnit() {

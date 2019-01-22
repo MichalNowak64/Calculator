@@ -10,14 +10,6 @@ public class PercentMoleConcentration extends Formula {
         return getSol();
     }
 
-    public PercentMoleConcentration(double data1, double data2) {
-        super(data1, data2);
-        super.setName("Stężenie procentowe molowe");
-        super.setData1Name("LICZBA MOLI SKŁADNIKA");
-        super.setData2Name("LICZBA MOLI ROZTWORU");
-
-    }
-
 
     public PercentMoleConcentration() {
         super.setName("Stężenie procentowe molowe");

@@ -1,8 +1,9 @@
 package model.unit;
 
 import javafx.collections.FXCollections;
+import model.unit.Unit;
 
-public class VolumeUnit extends Unit{
+public class VolumeUnit extends Unit {
     public VolumeUnit() {
         super.add("m^3",1);
         super.add("dm^3",0.001);

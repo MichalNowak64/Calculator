@@ -11,13 +11,6 @@ public class MoleConcentration extends Formula {
         return getSol();
     }
 
-    public MoleConcentration(double data1, double data2) {
-        super(data1, data2);
-        super.setName("Stężenie molowe");
-        super.setData1Name("LICZBA MOLI SKŁADNIKA");
-        super.setData2Name("OBJĘTOŚĆ ROZTWORU");
-
-    }
 
     public MoleConcentration() {
         super.setName("Stężenie molowe");

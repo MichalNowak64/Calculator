@@ -9,15 +9,6 @@ public class VolumeFraction extends Formula {
         return getSol();
     }
 
-    public VolumeFraction(double data1, double data2) {
-        super(data1, data2);
-        super.setName("Ułamek objętościowy");
-        super.setData1Name("OBJĘTOŚĆ SKŁADNIKA");
-        super.setData2Name("OBJĘTOŚĆ ROZTWORU");
-
-    }
-
-
     public VolumeFraction() {
         super.setName("Ułamek objętościowy");
         super.setData1Name("OBJĘTOŚĆ SKŁADNIKA");

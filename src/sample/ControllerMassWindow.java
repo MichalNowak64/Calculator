@@ -4,12 +4,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import model.formula.Formula;
 import model.formula.MassFormula;
 import model.formula.VolumeFormula;
-import model.history.FormulaValue;
 
 public class ControllerMassWindow {
     @FXML

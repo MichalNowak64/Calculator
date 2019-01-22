@@ -10,13 +10,6 @@ public class PercentMassConcentration extends Formula {
         return getSol();
     }
 
-    public PercentMassConcentration(double data1, double data2) {
-        super(data1, data2);
-        super.setName("Stężenie procentowe masowe");
-        super.setData1Name("MASA SKŁADNIKA");
-        super.setData2Name("MASA ROZTWORU");
-
-    }
 
     public PercentMassConcentration() {
         super.setName("Stężenie procentowe masowe");

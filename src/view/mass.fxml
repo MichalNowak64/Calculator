@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMassWindow">
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMassWindow">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+    <AnchorPane prefHeight="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
          <children>
             <Button id="okButton" fx:id="obliczButton1" layoutX="372.0" layoutY="194.0" mnemonicParsing="false" onAction="#accept1" text="OBLICZ" />
             <TextField id="data1" fx:id="data1" layoutX="192.0" layoutY="143.0" maxHeight="27.0" maxWidth="100.0" prefHeight="27.0" prefWidth="100.0" />

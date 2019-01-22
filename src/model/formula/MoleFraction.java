@@ -11,13 +11,6 @@ public class MoleFraction extends Formula {
         return getSol();
     }
 
-    public MoleFraction(double data1, double data2) {
-        super(data1, data2);
-        super.setName("Ułamek molowy");
-        super.setData1Name("LICZBA MOLI SKŁADNIKA");
-        super.setData2Name("LICZBA MOLI ROZTWORU");
-
-    }
 
     public MoleFraction() {
         super.setName("Ułamek molowy");

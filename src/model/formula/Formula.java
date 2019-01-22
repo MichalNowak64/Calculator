@@ -14,8 +14,6 @@ public abstract class Formula {
     private String solUnit;
 
 
-
-
     public Formula(double data1, double data2) {
         this.data1 = data1;
         this.data2 = data2;
@@ -74,12 +72,12 @@ public abstract class Formula {
 
     public abstract double solution(String d1, String d2);
 
-    public void setSolUnit(String solUnit) {
-        this.solUnit = solUnit;
-    }
-
     public String getSolUnit() {
         return solUnit;
+    }
+
+    public void setSolUnit(String solUnit) {
+        this.solUnit = solUnit;
     }
 
     public Unit getData1Unit() {

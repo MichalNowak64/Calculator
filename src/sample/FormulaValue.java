@@ -1,4 +1,4 @@
-package model.history;
+package sample;
 
 public class FormulaValue {
     private String name;
@@ -36,7 +36,6 @@ public class FormulaValue {
     }
 
     public String getString(){
-        String str=name+": "+value+unit;
-        return str;
+        return name+": "+value+unit;
     }
 }

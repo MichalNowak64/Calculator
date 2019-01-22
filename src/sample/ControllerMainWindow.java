@@ -5,16 +5,13 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.formula.*;
-import model.history.FormulaValue;
 import model.history.HistoryList;
 
 import java.io.FileNotFoundException;
@@ -64,8 +61,8 @@ public class ControllerMainWindow {
         formulaList.add(new MoleFraction());//Ulamek molowy
         formulaList.add(new VolumeFraction());//Ulamek objetosciowy
 
-        for(int i=0;i<formulaList.size();i++){
-            choiceFormulaList.add(formulaList.get(i).getName());
+        for (Formula aFormulaList : formulaList) {
+            choiceFormulaList.add(aFormulaList.getName());
         }
 
         for(int i=0;i<formulaList.size();i++){
@@ -95,8 +92,6 @@ public class ControllerMainWindow {
         solution.clear();
 
         if (!data1.getText().isEmpty() && !data2.getText().isEmpty()) {
-            System.out.println(unit1.getValue());
-            System.out.println(unit2.getValue());
             formula=formulaList.get(formulaMap.get(choiceFormula.getValue()));
             formula.setData1(Double.parseDouble(data1.getText()));
             formula.setData2(Double.parseDouble(data2.getText()));
@@ -109,7 +104,6 @@ public class ControllerMainWindow {
     }
 
     public void acceptFormula(ActionEvent event){
-        System.out.println(formulaMap.get(choiceFormula.getValue()));
         formula=formulaList.get(formulaMap.get(choiceFormula.getValue()));
 
         data1Label.setText(formula.getData1Name());
@@ -132,7 +126,7 @@ public class ControllerMainWindow {
         zapis.close();
 
         try {
-            FXMLLoader loader =new FXMLLoader(getClass().getResource("history.fxml"));
+            FXMLLoader loader =new FXMLLoader(getClass().getResource("../view/history.fxml"));
             Parent root=loader.load();
             ControllerHistoryWindow controllerHistoryWindow=new ControllerHistoryWindow();
             Stage stage = new Stage();
@@ -149,7 +143,7 @@ public class ControllerMainWindow {
 
     public void openMass(ActionEvent event){
         try {
-            FXMLLoader loader =new FXMLLoader(getClass().getResource("mass.fxml"));
+            FXMLLoader loader =new FXMLLoader(getClass().getResource("../view/mass.fxml"));
             Parent root=loader.load();
             ControllerHistoryWindow controllerHistoryWindow=new ControllerHistoryWindow();
             Stage stage = new Stage();

@@ -1,5 +1,7 @@
 package model.history;
 
+import sample.FormulaValue;
+
 import java.util.ArrayList;
 import java.util.List;
 
